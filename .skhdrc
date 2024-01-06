@@ -1,0 +1,36 @@
+# change focused window
+lcmd - s : yabai -m window --focus west
+lcmd - e : yabai -m window --focus north
+lcmd - d : yabai -m window --focus south
+lcmd - f : yabai -m window --focus east
+
+# adjust window size
+lcmd + shift - s : yabai -m window --resize left:-20:0
+lcmd + shift - e : yabai -m window --resize top:0:-20
+lcmd + shift - d : yabai -m window --resize bottom:0:20
+lcmd + shift - f : yabai -m window --resize right:20:0
+
+# rotate window position
+lcmd - w : yabai -m window --swap prev
+lcmd - r : yabai -m window --swap next
+
+# switch to specific desktop
+lcmd - 7 : yabai -m space --focus 1
+lcmd - 8 : yabai -m space --focus 2
+lcmd - 9 : yabai -m space --focus 3
+lcmd - 0 : yabai -m space --focus 4
+
+# send application to specific desktop and switch to it
+lcmd + shift - 7 : yabai -m window --space 1; yabai -m space --focus 1
+lcmd + shift - 8 : yabai -m window --space 2; yabai -m space --focus 2
+lcmd + shift - 9 : yabai -m window --space 3; yabai -m space --focus 3
+lcmd + shift - 0 : yabai -m window --space 4; yabai -m space --focus 4
+
+# toggle fullscreen
+lcmd - c : yabai -m window --toggle native-fullscreen
+
+# toggle float, center on screen
+lcmd - g : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# spawn terminal
+lcmd - return : open -n -a /Applications/Warp.app

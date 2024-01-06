@@ -34,3 +34,5 @@ lcmd - g : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # spawn terminal
 lcmd - return : open -n -a /Applications/Warp.app
+# spawn web browser
+lcmd - 0x2A : open -n -a firefox

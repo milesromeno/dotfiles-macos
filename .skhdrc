@@ -32,6 +32,9 @@ lcmd - c : yabai -m window --toggle native-fullscreen
 # toggle float, center on screen
 lcmd - g : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
+# kill focused window
+cmd - q : yabai -m window --close
+
 # spawn terminal
 lcmd - return : open -n -a /Applications/Warp.app
 # spawn web browser
